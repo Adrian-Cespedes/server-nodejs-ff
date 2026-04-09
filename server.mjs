@@ -31,10 +31,10 @@ client.once("ready", function () {
       false, // Valor por defecto si el flag no existe
       function (err, showFeature) {
         if (showFeature) {
-          console.log("feature true");
+          console.log("feature: true");
           res.send("🎉 Feature flag is ON - New menu active!");
         } else {
-          console.log("feature false");
+          console.log("feature: false");
           res.send("Feature flag is OFF - Original menu");
         }
       }
